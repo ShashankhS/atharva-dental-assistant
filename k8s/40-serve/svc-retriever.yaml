@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: atharva-retriever
   namespace: atharva-ml
+  labels:
+    app: retriever
 spec:
   type: NodePort
   selector: { app: retriever }
@@ -11,4 +13,3 @@ spec:
     port: 8001
     targetPort: 8001
     nodePort: 30100
-

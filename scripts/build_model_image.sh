@@ -19,7 +19,7 @@ TMP_DF=$(mktemp)
 sed "s|REPLACE_RUN_ID|${RUN_ID}|g" training/Dockerfile.model-asset > "$TMP_DF"
 
 echo "==> Building model asset image: ${IMG}"
-docker build -f "$TMP_DF" -t "${IMG}" .
+podman build -f "$TMP_DF" -t "${IMG}" .
 
 # Optional, enable if you want to push this image to DockerHub
 #echo "==> Pushing to local registry ${IMG}"

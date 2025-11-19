@@ -42,7 +42,7 @@ EOF
 
 echo "==> (Optional) Check container runtime inside nodes for ImageVolume support"
 CONTROL_NODE=$(kubectl get nodes -o name | head -n1 | sed 's|node/||')
-docker exec "${CLUSTER_NAME}-control-plane" containerd --version || true
+podman exec "${CLUSTER_NAME}-control-plane" containerd --version || true
 
 
 echo "==> All set!

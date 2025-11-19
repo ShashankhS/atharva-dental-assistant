@@ -27,7 +27,7 @@ nodes:
 - role: control-plane
   image: kindest/node:v1.34.0
   extraMounts:
-    - hostPath: /Users/gshah/trainings/llmops/nov/1719/project
+    - hostPath: /Users/shs2/training/LLMOps_k8s
       containerPath: /mnt/project
   extraPortMappings:
   - containerPort: 32000
@@ -85,7 +85,7 @@ nodes:
 - role: worker
   image: kindest/node:v1.34.0
   extraMounts:
-    - hostPath: /Users/gshah/trainings/llmops/nov/1719/project
+    - hostPath: /Users/shs2/training/LLMOps_k8s
       containerPath: /mnt/project
   extraPortMappings:
   - containerPort: 80
@@ -104,5 +104,5 @@ nodes:
 - role: worker
   image: kindest/node:v1.34.0
   extraMounts:
-    - hostPath: /Users/gshah/trainings/llmops/nov/1719/project
+    - hostPath: /Users/shs2/training/LLMOps_k8s
       containerPath: /mnt/project
