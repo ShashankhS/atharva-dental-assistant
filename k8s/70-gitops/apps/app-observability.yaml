@@ -8,7 +8,7 @@ metadata:
 spec:
   project: atharva
   source:
-    repoURL: https://github.com/xxxxxx/atharva-dental-assistant.git
+    repoURL: https://github.com/ShashankhS/atharva-dental-assistant.git
     targetRevision: main
     path: k8s/50-observability
   destination:
